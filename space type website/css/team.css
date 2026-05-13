@@ -1,0 +1,100 @@
+.team-section {
+  padding: 80px 40px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  background: #0f0f0f;
+}
+
+/* SQUARE CARD */
+.team-card {
+  width: 200px;
+  height: 200px;
+
+  background: #1a1a1a;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+  background: #222;
+}
+
+.team-card h3 {
+  color: #ff4655;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   HERO BUTTON (Play Now)
+========================= */
+
+.btn-primary {
+  display: inline-block;
+  background: #ff4655;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #e63b4a;
+  transform: translateY(-2px);
+}
+
+.page-hero {
+  padding: 140px 40px 80px; /* fixes navbar overlap */
+  text-align: center;
+
+  background: radial-gradient(circle at center, #1a1a1a 0%, #0f0f0f 70%);
+  color: white;
+}
+
+/* TITLE */
+.page-hero h2 {
+  font-size: 48px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* SUBTEXT */
+.page-hero p {
+  font-size: 16px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+}
+
+/* RED ACCENT LINE */
+.page-hero h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #ff4655;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .team-card {
+    width: 80%;
+    height: auto;
+    padding: 30px;
+  }
+}

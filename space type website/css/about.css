@@ -1,0 +1,28 @@
+.page-hero {
+  padding: 120px 40px 60px;
+  text-align: center;
+  background: #0f0f0f;
+}
+
+.about-section {
+  padding: 80px 40px;
+  text-align: center;
+  background: #111;
+}
+
+.about-section.dark {
+  background: #0a0a0a;
+}
+
+.page-hero h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.page-hero {
+  padding: 140px 40px 80px; /* fixes navbar overlap */
+  text-align: center;
+
+  background: radial-gradient(circle at center, #1a1a1a 0%, #0f0f0f 70%);
+  color: white;
+}

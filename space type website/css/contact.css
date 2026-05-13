@@ -1,0 +1,52 @@
+/* LOGO FIXED SIZE */
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 80px 40px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  background: #0f0f0f;
+}
+
+/* CONTACT CARD */
+.contact-card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+.contact-card h3 {
+  color: #ff4655;
+  margin-bottom: 10px;
+}
+
+.page-hero {
+  padding: 140px 40px 80px; /* fixes navbar overlap */
+  text-align: center;
+
+  background: radial-gradient(circle at center, #1a1a1a 0%, #0f0f0f 70%);
+  color: white;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+}
